@@ -1,0 +1,45 @@
+@import "config";
+body {
+  background: 50vw 50vh no-repeat url("../images/bg-pattern-bottom.svg"),
+    right 50vw bottom 50vh no-repeat url("../images/bg-pattern-top.svg"),
+    $dark-cyan;
+}
+.card {
+  width: 350px;
+  border-radius: 20px;
+}
+.top {
+  height: 150px;
+  background: url("../images/bg-pattern-card.svg");
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.content {
+  background-color: white;
+  text-align: center;
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.user-data {
+  padding-bottom: 2em;
+}
+.profile-picture {
+  border-radius: 100%;
+  position: relative;
+  top: -50px;
+  border: 3px solid white;
+}
+.name {
+  margin-top: -1.5rem;
+}
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  border-top: 1px ridge $dark-gray;
+  padding: 0.5em;
+}
+.item {
+  font-size: 1rem;
+}

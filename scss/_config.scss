@@ -1,0 +1,42 @@
+// Primary colors:
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+
+// Neutral colors:
+$dark-gray: hsla(0, 0%, 59%, 0.25);
+
+// Typography:
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  color: $very-dark-desaturated-blue;
+  font-weight: 700;
+  .light-text {
+    color: $dark-grayish-blue;
+    font-weight: 400;
+  }
+}
+
+// Layout
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+}
+
+//Frontend Mentor Footer
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
